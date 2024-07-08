@@ -1,5 +1,5 @@
 Burguer Beer Landing Page
-Uma landing page responsiva para a Burguer Beer, uma hamburgueria fictícia, desenvolvida com React.js, SCSS e Bootstrap.
+Uma landing page responsiva para a Burguer Beer, uma hamburgueria fictícia, desenvolvida com React.js e SCSS.
 
 Funcionalidades:
 Apresentação da Burguer Beer com destaque para seus produtos.
