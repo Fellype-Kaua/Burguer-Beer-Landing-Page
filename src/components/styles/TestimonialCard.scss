@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+#testimonial-card{
+    width: 100%;
+    min-width: 30rem;
+    border-radius: 2rem;
+    border: 1px solid #D9D9D9;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    text-align: left;
+    .testimonial-card__text{
+        font-size: $text-size;
+        font-weight: bold;
+    }
+    .testimonial-card__profile{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+.testimonial-card_profileImg{
+    height: 4rem;
+}
+        .testimonial-card__name{
+            font-size: 1.5rem;
+            color: $text-color;
+        }
+    }
+}

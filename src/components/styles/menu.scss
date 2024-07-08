@@ -1,0 +1,53 @@
+@import "./variables.scss";
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  @include containerPadding($mobilePadding);
+
+  h2 {
+    @include titles;
+  }
+
+  .menu__subtitle {
+    @include subtitles(100%, center, $subtitlesMobile);
+  }
+
+  .menu__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .menu {
+    @include containerPadding($middlePadding);
+
+    .menu__subtitle {
+      @include subtitles(80%, center, $subtitlesMobile);
+    }
+
+    .menu__cards {
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu {
+    @include containerPadding($desktopPadding);
+
+    .menu__subtitle {
+      @include subtitles(80%, center, $subtitlesDesktop);
+    }
+
+    .menu__cards {
+      flex-direction: row;
+    }
+  }
+}

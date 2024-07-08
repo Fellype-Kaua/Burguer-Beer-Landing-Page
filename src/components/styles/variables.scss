@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+}
+$primary-color: #A16F24;
+$primary-dark: #77521b;
+$light-color: #FFFFFF;
+$bg-color: #FFF6E0;
+$title-color: #212529;
+$text-color: #495057;
+$text-size: 1.6rem;
+$text-size-middle: 1.3rem;
+$subtitlesMobile: 3rem;
+$subtitlesDesktop: 4.5rem;
+$subtitlesMiddle: 3rem;
+$mobilePadding: 6rem 2rem;
+$desktopPadding: 15rem 20%;
+$middlePadding: 7.5rem 7.5rem;
+$mobileGap: 1.5rem;
+$desktopGap: 2rem;
+$hoverRGBA: rgba(0, 0, 0, 0.05);
+
+@mixin containerPadding($device){
+    padding: $device;
+}
+
+
+@mixin paragraph{
+    font-size: $text-size;
+    color: $text-color;
+}
+
+@mixin titles{
+    color: $primary-color;
+    font-size: 1.8rem;
+}
+
+@mixin subtitles ($maxWidth ,$textAlign, $subtitlesSize) {
+    font-size: $subtitlesSize;
+    color: $title-color;
+    max-width: $maxWidth;
+    text-align: $textAlign;
+}

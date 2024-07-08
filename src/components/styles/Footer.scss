@@ -1,0 +1,53 @@
+@import './variables.scss';
+#footer{
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    color: $light-color;
+    @include containerPadding($mobilePadding);
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    .footer__content{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .footer__title{
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+        .footer__text{
+            font-size: 1.2rem;
+        }
+        .footer__credits{
+            font-size: 1.2rem;
+            a{
+                font-size: 1.2rem;
+                color: $light-color;
+            }
+        }
+    }
+    .footer__social-media{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    #footer{
+        flex-direction: row;
+        padding: 7.5rem;
+        align-items: center;
+        text-align: left;
+    }  
+}
+
+@media (min-width: 1200px) {
+    #footer{
+        flex-direction: row;
+        padding: 10rem 40rem;
+        align-items: center;
+        text-align: left;
+    }  
+}

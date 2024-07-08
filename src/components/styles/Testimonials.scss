@@ -1,0 +1,57 @@
+@import './variables.scss';
+
+#testimonial {
+  @include containerPadding($mobilePadding);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  .testimonial-title {
+    @include titles;
+  }
+
+  .testimonial-subtitle {
+    @include subtitles(100%, center, $subtitlesMobile);
+    margin-bottom: 4rem;
+  }
+
+  .testimonialContainer {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  #testimonial {
+    @include containerPadding($middlePadding);
+
+    .testimonial-subtitle {
+      @include subtitles(100%, center, $subtitlesMiddle);
+      margin-bottom: 4rem;
+    }
+
+    .testimonialContainer {
+      gap: 1rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #testimonial {
+    @include containerPadding($desktopPadding);
+
+    .testimonial-subtitle {
+      @include subtitles(100%, center, $subtitlesDesktop);
+      margin-bottom: 4rem;
+    }
+
+    .testimonialContainer {
+      width: 100%;
+      gap: 2rem;
+    }
+  }
+}

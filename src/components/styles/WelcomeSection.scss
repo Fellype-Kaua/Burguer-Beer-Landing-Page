@@ -1,0 +1,132 @@
+@import "./variables.scss";
+
+.welcome-section {
+  @include containerPadding($mobilePadding);
+  background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+  text-align: center;
+
+  .welcome-section_content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+
+    .welcome-section_welcomeTxt {
+      font-size: $text-size;
+      color: $primary-color;
+
+      .welcomeTxt-burguer {
+        font-size: $text-size;
+        color: black;
+      }
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      color: $title-color;
+    }
+
+    p {
+      @include paragraph;
+    }
+
+    .action-button {
+      margin: auto;
+    }
+  }
+
+  .welcomeImage {
+    width: 30rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .welcome-section {
+    @include containerPadding($middlePadding);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    width: 100%;
+    text-align: left;
+
+    .welcome-section_content {
+      width: 50%;
+
+      .welcome-section_welcomeTxt {
+        color: $primary-color;
+
+        .welcomeTxt-burguer {
+          color: black;
+        }
+      }
+
+      h1 {
+        font-size: 6rem;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+      .action-button {
+        width: 22rem;
+        padding: 1rem;
+        margin: 0;
+        align-self: flex-start;
+      }
+    }
+
+    .welcomeImage {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .welcome-section {
+    @include containerPadding($desktopPadding);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    width: 100%;
+    text-align: left;
+
+    .welcome-section_content {
+      width: 50%;
+
+      .welcome-section_welcomeTxt {
+        font-size: $text-size;
+        color: $primary-color;
+
+        .welcomeTxt-burguer {
+          font-size: $text-size;
+          color: black;
+        }
+      }
+
+      h1 {
+        font-size: 8.2rem;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+      .action-button {
+        margin: 0;
+        align-self: flex-start;
+      }
+    }
+
+    .welcomeImage {
+      width: 50%;
+    }
+  }
+}

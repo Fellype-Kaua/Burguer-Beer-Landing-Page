@@ -1,0 +1,47 @@
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  background-color: #FFF6E0;
+}
+.header .header_logo {
+  font-size: 3rem;
+  font-weight: 900;
+  color: black;
+  cursor: pointer;
+}
+.header .header_logo .header_logo-Beer {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #A16F24;
+}
+.header .header_nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+}
+.header .header_nav-list .header_nav-item .header_nav-link {
+  color: #A16F24;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+.header .header_nav-list .header_nav-item .header_nav-link:hover {
+  font-weight: 900;
+  border-bottom: solid 1px #A16F24;
+}
+.header .header_btn {
+  border: solid 1px #A16F24;
+  color: #A16F24;
+  background: none;
+  padding: 1.5rem;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.header .header_btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}/*# sourceMappingURL=Header.css.map */
