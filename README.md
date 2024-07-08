@@ -7,7 +7,7 @@ Depoimentos de clientes satisfeitos.
 Menu interativo com opções de hambúrgueres e acompanhamentos.
 Informações de contato e botões de call to action.
 Tecnologias Utilizadas:
-React.js, SCSS (Sass), Bootstrap
+React.js e SCSS (Sass).
 
 Como Executar:
 Clone o repositório.
