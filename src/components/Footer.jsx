@@ -13,8 +13,8 @@ const Footer = () => {
         <p className="footer__credits">Criado por: <a href="https://www.linkedin.com/in/fellype-kau%C3%A3-64a135226/">Fellype Kauã</a></p>
       </div>
       <div className="footer__social-media">
-        <a className="footer__social-link" href=""><img className="footer__social-icon" src={instagramIcon} alt="Instagram Icon" /></a>
-        <a className="footer__social-link" href=""><img className="footer__social-icon" src={facebookIcon} alt="Facebook Icon" /></a>
+        <a className="footer__social-link" href="#"><img className="footer__social-icon" src={instagramIcon} alt="Instagram Icon" /></a>
+        <a className="footer__social-link" href="#"><img className="footer__social-icon" src={facebookIcon} alt="Facebook Icon" /></a>
       </div>
     </footer>
   );
