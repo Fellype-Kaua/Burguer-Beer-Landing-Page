@@ -39,7 +39,7 @@ const Header = () => {
           <li className="header_nav-item">
             <a
               className="header_nav-link"
-              href="#"
+              href="#home"
               onClick={(e) => handleNavClick(e, "home")}
             >
               Início
